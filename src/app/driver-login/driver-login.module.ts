@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
+import { FileUploadComponent } from '../file-upload/file-upload.component';
 import { IonicModule } from '@ionic/angular';
 
 import { DriverLoginPageRoutingModule } from './driver-login-routing.module';
@@ -13,8 +13,10 @@ import { DriverLoginPage } from './driver-login.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    DriverLoginPageRoutingModule
+    DriverLoginPageRoutingModule,
+    
   ],
-  declarations: [DriverLoginPage]
+  declarations: [DriverLoginPage,
+    FileUploadComponent]
 })
 export class DriverLoginPageModule {}

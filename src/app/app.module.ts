@@ -16,7 +16,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import {AngularFirestoreModule,AngularFirestore} from 'angularfire2/firestore';
 import {AngularFireStorageModule} from 'angularfire2/storage'
 import { FormsModule } from '@angular/forms';
-
+import {AngularFireDatabaseModule} from 'angularfire2/database'
 
 
 
@@ -37,7 +37,8 @@ import { FormsModule } from '@angular/forms';
      AngularFireAuthModule,
      AngularFirestoreModule,
      AngularFireStorageModule,
-     FormsModule
+     FormsModule,
+     AngularFireDatabaseModule
      
 
 

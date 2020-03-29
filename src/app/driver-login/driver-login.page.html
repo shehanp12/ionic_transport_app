@@ -48,7 +48,10 @@
     <!-- Phone number -->
     <input type="text" minlength="10" maxlength="10" [ngModelOptions]="{standalone: true}" required name="phone" #phone="ngModel" ngModel [(ngModel)]="item.phone" id="phone" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
     <p *ngIf="phone.touched && !phone.valid">Please enter a valid phonenumber</p>
+
     <br>
+
+    <app-file-upload></app-file-upload>
   
   
     <input type="text" id="seat" ngModel [(ngModel)]="item.seat" [ngModelOptions]="{standalone: true}" #seat="ngModel"    required name="seat" class="form-control mb-4" placeholder="Seat Number">
