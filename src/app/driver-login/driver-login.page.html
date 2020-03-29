@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Driver-login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form (ngSubmit)="onSubmit()" class="text-center border border-light p-5"  >
+
+    <p class="h4 mb-4">Your Details</p>
+  
+    <div class="form-row mb-4">
+        <div class="col">
+  
+            <input type="text" id="start" name="start" ngModel #start="ngModel" [ngModelOptions]="{standalone: true}" class="form-control" required [(ngModel)]="item.start" placeholder="Start ">
+            <p *ngIf="!start.valid && start.touched">Please enter a valid city</p>
+  
+        </div>
+        <div class="col">
+            <!-- Last name -->
+            <input type="time" id="time" name="time" required ngModel [ngModelOptions]="{standalone: true}" #time="ngModel" [(ngModel)]="item.time" class="form-control" placeholder="Time">
+            <p *ngIf="!time.valid && time.touched">Please enter the time</p>
+        </div>
+  
+  
+    </div>
+  
+  
+    <input type="email"
+    id="email" name="email"
+    class="form-control mb-4" [ngModelOptions]="{standalone: true}" ngModel placeholder="E-mail" required email #email="ngModel"
+      [(ngModel)]="item.email">
+      <!-- <span="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email</span="help-block"> -->
+      <p *ngIf="!email.valid && email.touched">Please enter a valid email</p>
+  
+    <!-- Password -->
+    <input type="password" name="password"
+    id="password"
+      ngModel  class="form-control"
+       placeholder="Password"
+      [(ngModel)]="item.password" required
+        aria-describedby="defaultRegisterFormPasswordHelpBlock" [ngModelOptions]="{standalone: true}" #password="ngModel">
+        <p *ngIf="!password.valid && password.touched">Please enter a valid password</p>
+  <br>
+  
+  
+    <!-- Phone number -->
+    <input type="text" minlength="10" maxlength="10" [ngModelOptions]="{standalone: true}" required name="phone" #phone="ngModel" ngModel [(ngModel)]="item.phone" id="phone" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+    <p *ngIf="phone.touched && !phone.valid">Please enter a valid phonenumber</p>
+    <br>
+  
+  
+    <input type="text" id="seat" ngModel [(ngModel)]="item.seat" [ngModelOptions]="{standalone: true}" #seat="ngModel"    required name="seat" class="form-control mb-4" placeholder="Seat Number">
+    <p *ngIf="seat.touched && !seat.valid">Please enter a seat number</p>
+    <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+
+    <hr>
+  
+  </form>  
+
+</ion-content>
+
+ 

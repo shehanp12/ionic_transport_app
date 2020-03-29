@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>details-card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Shehdule</h1>
+
+  
+<div class="card-group">
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div *ngIf="items?.length > 0;else noItems">
+      <ul *ngFor="let item of items" class="collection">
+        <li class="collection-item"><strong>{{item.start}}: </strong> {{item.time}} <a href="#" class="secondary-content">
+          <i (click)="editItem($event, item)" class="fa fa-pencil"></i>
+          <i *ngIf="editState && itemToEdit.id == item.id" (click)="clearState()" class="fa fa-compress"></i>
+        </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  
+  
+</div>
+<ng-template #noItems>
+  <hr>
+  <h5>There are no items to list</h5>
+</ng-template>
+
+
+
+  
+
+  
+  
+
+</ion-content>
