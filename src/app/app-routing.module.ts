@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'driver-login', pathMatch: 'full' },
+  { path: '', redirectTo: 'map-user', pathMatch: 'full' },
   
  
   {
@@ -16,7 +16,8 @@ const routes: Routes = [
   {
     path: 'user-login',
     loadChildren: () => import('./user-login/user-login.module').then( m => m.UserLoginPageModule)
-  },  {
+  },
+  {
     path: 'map-user',
     loadChildren: () => import('./map-user/map-user.module').then( m => m.MapUserPageModule)
   },

@@ -15,7 +15,8 @@ import{AgmCoreModule} from '@agm/core';
     IonicModule,
     MapUserPageRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey:'AIzaSyD_pAGf9761LDJpRnwJFDhWmC-IW2uVmIY'
+     /*  apiKey:'AIzaSyD_pAGf9761LDJpRnwJFDhWmC-IW2uVmIY' */
+     apiKey:'AIzaSyB-kw1kM6VEefNxrSiN7E4n7XdfZ7j_zE4'
     })
   ],
   declarations: [MapUserPage]
