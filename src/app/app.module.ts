@@ -16,7 +16,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import {AngularFirestoreModule,AngularFirestore} from 'angularfire2/firestore';
 import {AngularFireStorageModule} from 'angularfire2/storage'
 import { FormsModule } from '@angular/forms';
-import {AngularFireDatabaseModule} from 'angularfire2/database'
+import {AngularFireDatabaseModule} from 'angularfire2/database';
+import{AgmCoreModule} from '@agm/core';
 
 
 
@@ -38,7 +39,10 @@ import {AngularFireDatabaseModule} from 'angularfire2/database'
      AngularFirestoreModule,
      AngularFireStorageModule,
      FormsModule,
-     AngularFireDatabaseModule
+     AngularFireDatabaseModule,
+     AgmCoreModule.forRoot({
+      apiKey:'AIzaSyD_pAGf9761LDJpRnwJFDhWmC-IW2uVmIY'
+    })
      
 
 
