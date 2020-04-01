@@ -5,7 +5,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'tabs', pathMatch: 'full' },
   
  
- /* {
+  {
     path: 'driver-login',
     loadChildren: () => import('./driver-login/driver-login.module').then( m => m.DriverLoginPageModule)
   },
@@ -20,7 +20,7 @@ const routes: Routes = [
   {
     path: 'map-user',
     loadChildren: () => import('./map-user/map-user.module').then( m => m.MapUserPageModule)
-  },*/
+  },
   {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
