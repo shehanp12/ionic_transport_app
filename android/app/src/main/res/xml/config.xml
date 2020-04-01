@@ -2,5 +2,5 @@
 <widget version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <access origin="*" />
   
- <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyCEp_pFuVcLVqv6w3pwoNvnhVvgS2X2m_o" /> 
+  
 </widget>
