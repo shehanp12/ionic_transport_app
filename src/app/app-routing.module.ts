@@ -2,7 +2,11 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+<<<<<<< HEAD
   { path: '', redirectTo: 'user-login', pathMatch: 'full' },
+=======
+  { path: '', redirectTo: 'tabs', pathMatch: 'full' },
+>>>>>>> 7355f1f0940355b3a25909f637ce3b012dab4081
   
  
   {
@@ -21,6 +25,11 @@ const routes: Routes = [
     path: 'map-user',
     loadChildren: () => import('./map-user/map-user.module').then( m => m.MapUserPageModule)
   },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+
 
 ];
 

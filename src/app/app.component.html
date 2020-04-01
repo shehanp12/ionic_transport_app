@@ -1,4 +1,22 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+ <ion-split-pane contentId="menu-content" when="xs" [disabled]="true" >
+   <ion-menu contentId="menu-content" menuId="menu-content" side="start" type="overlay">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Start Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item href="driver-login">Driver</ion-item>
+        <ion-item href="user-login">User</ion-item>
+        <ion-item href="map-user">Map</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+      </ion-list>
+    </ion-content>
+   </ion-menu>
+   <ion-router-outlet id="menu-content"></ion-router-outlet>
+ </ion-split-pane>
   
 </ion-app>
