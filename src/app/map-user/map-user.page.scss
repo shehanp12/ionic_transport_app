@@ -1,5 +1,22 @@
-agm-map{
+/* agm-map{
     height: 500px;
     width: 100%;
    }
+   */
+
+
+   .map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  
+    background-color: transparent;
+  
+    opacity: 0;
+    transition: opacity 150ms ease-in;
+  }
+  
+  .map.visible {
+    opacity: 1;
+  }
   

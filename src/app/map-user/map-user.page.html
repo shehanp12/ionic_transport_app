@@ -4,11 +4,23 @@
       <ion-menu-button ></ion-menu-button>
     </ion-buttons>
     <ion-title>map-user</ion-title>
+    <ion-button
+  color="primary"
+  (click)="onPickLocation()"
+  *ngIf="!selectedLocationImage && !isLoading">Choose</ion-button>
   </ion-toolbar>
 
 </ion-header>
 
-<agm-map [latitude]='lat' [longitude]='lng'>
+<!-- <agm-map [latitude]='lat' [longitude]='lng'>
   <agm-marker [latitude]='lat' [longitude]='lng'>
 
-  </agm-marker></agm-map>
+  </agm-marker></agm-map> -->
+  <!-- <ion-button
+  color="primary"
+  (click)="onPickLocation()"
+  *ngIf="!selectedLocationImage && !isLoading" -->
+
+<ion-content>
+  <div class="map" #map></div>
+</ion-content>
