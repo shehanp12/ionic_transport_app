@@ -7,6 +7,11 @@ export interface Coordinates {
   
   export interface PlaceLocation extends Coordinates {
     address: string;
-    staticMapImageUrl: string;
+    /* staticMapImageUrl: string; */
+  }
+
+  export interface position {
+    lat: number;
+    lng: number;
   }
   

@@ -13,14 +13,8 @@ export const environment = {
     messagingSenderId: "609741147228",
     appId: "1:609741147228:web:01b70a8d690503ce2f2a99",
     measurementId: "G-51XC22YVEZ"
-    }
+    },
+    googleMapsAPIKey: 'AIzaSyDklIkdI-kU2BovXcGHyLAjtJkzIq89y64'
+   
 };
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
