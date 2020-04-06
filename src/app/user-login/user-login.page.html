@@ -10,6 +10,7 @@
 
 <ion-content>
 
+
   <div *ngIf="auth.user$ | async; then authenticated else guest">
    
   </div>

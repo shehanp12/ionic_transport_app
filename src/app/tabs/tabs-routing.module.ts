@@ -39,7 +39,7 @@ const routes: Routes = [
   },
   {
     path:'',
-    redirectTo:'tabs/map-user',
+    redirectTo:'tabs/user-login',
     pathMatch:'full'
   }
 ];
