@@ -41,7 +41,7 @@ import{AgmCoreModule} from '@agm/core';
      FormsModule,
      AngularFireDatabaseModule,
      AgmCoreModule.forRoot({
-      apiKey:'AIzaSyD_pAGf9761LDJpRnwJFDhWmC-IW2uVmIY'
+      apiKey:environment.googleMapsAPIKey
     })
      
 
