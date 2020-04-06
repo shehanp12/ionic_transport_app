@@ -2,18 +2,29 @@
  <ion-split-pane contentId="menu-content" when="xs" [disabled]="true" >
    <ion-menu contentId="menu-content" menuId="menu-content" side="start" type="overlay">
     <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Start Menu</ion-title>
+      <ion-toolbar color="secondary">
+        <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item href="driver-login">Driver</ion-item>
-        <ion-item href="user-login">User</ion-item>
-        <ion-item href="map-user">Map</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
+    <ion-content color="secondary">
+      <div class="bg"> 
+      <ion-list >
+        <ion-item href="driver-login" color="rgb(171, 41, 223)">
+          <ion-label >
+            Driver
+          </ion-label></ion-item>
+        <ion-item href="user-login" color="rgb(171, 41, 223)">
+          <ion-label>
+            User
+          </ion-label>
+         </ion-item>
+        <ion-item href="map-user" color="rgb(171, 41, 223)">
+          <ion-label>
+            Map
+          </ion-label></ion-item>
+
       </ion-list>
+    </div>
     </ion-content>
    </ion-menu>
    <ion-router-outlet id="menu-content"></ion-router-outlet>
