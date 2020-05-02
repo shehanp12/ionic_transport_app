@@ -16,7 +16,7 @@ import{AgmCoreModule} from '@agm/core';
     MapUserPageRoutingModule,
     AgmCoreModule.forRoot({
      /*  apiKey:'AIzaSyD_pAGf9761LDJpRnwJFDhWmC-IW2uVmIY' */
-     apiKey:'AIzaSyB-kw1kM6VEefNxrSiN7E4n7XdfZ7j_zE4'
+     apiKey:'AIzaSyDS2HbzXvCBYOENMa9B1GysBld8wHQD9CE'
     })
   ],
   declarations: [MapUserPage]
